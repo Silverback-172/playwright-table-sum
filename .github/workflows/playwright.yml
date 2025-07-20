@@ -15,5 +15,7 @@ jobs:
           node-version: 20
       - name: Install Playwright
         run: npm install playwright
+      - name: Install Playwright Browsers
+        run: npx playwright install
       - name: Scrape Tables (22f3000891@ds.study.iitm.ac.in)
         run: node scrape_tables.mjs
